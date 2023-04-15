@@ -1,0 +1,33 @@
+@url_dev=http://localhost:5505
+
+### Login
+POST {{url_dev}}/sign-in
+Content-Type: application/json
+
+{
+    "username": "test002",
+    "password": "Test002"
+}
+
+### Register
+POST {{url_dev}}/sign-up
+Content-Type: application/json
+
+{
+    "name": "test 004",
+    "username": "test004",
+    "password": "Test004",
+    "email": "test004@gmail.com"
+}
+
+### Verify OTP
+POST {{url_dev}}/verify-otp
+Content-Type: application/json
+
+{
+    "otp": "821167",
+    "name": "test 004",
+    "username": "test004",
+    "password": "Test004",
+    "email": "test004@gmail.com"
+}
